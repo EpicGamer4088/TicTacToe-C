@@ -1,0 +1,3 @@
+H:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/TikTacToeC.dir
+H:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
