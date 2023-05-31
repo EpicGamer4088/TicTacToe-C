@@ -4,6 +4,11 @@
 #define SIZE 3
 
 /**
+ * The Main code
+ */
+void Main();
+
+/**
  *
  * @param board ... The Game Board
  */
