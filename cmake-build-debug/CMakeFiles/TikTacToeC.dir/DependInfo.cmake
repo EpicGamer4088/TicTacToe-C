@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Programmieren/Projekte/.github/solo/TikTacToeC/functions.c" "CMakeFiles/TikTacToeC.dir/functions.c.obj" "gcc" "CMakeFiles/TikTacToeC.dir/functions.c.obj.d"
   "C:/Programmieren/Projekte/.github/solo/TikTacToeC/main.c" "CMakeFiles/TikTacToeC.dir/main.c.obj" "gcc" "CMakeFiles/TikTacToeC.dir/main.c.obj.d"
   )
 

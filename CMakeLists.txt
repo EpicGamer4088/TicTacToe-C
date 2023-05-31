@@ -3,4 +3,4 @@ project(TikTacToeC C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(TikTacToeC main.c)
+add_executable(TikTacToeC main.c functions.c functions.h)

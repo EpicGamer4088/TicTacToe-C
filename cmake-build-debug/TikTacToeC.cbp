@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Programmieren/Projekte/.github/solo/TikTacToeC/functions.c">
+			<Option target="TikTacToeC"/>
+		</Unit>
+		<Unit filename="C:/Programmieren/Projekte/.github/solo/TikTacToeC/functions.h">
+			<Option target="TikTacToeC"/>
+		</Unit>
 		<Unit filename="C:/Programmieren/Projekte/.github/solo/TikTacToeC/main.c">
 			<Option target="TikTacToeC"/>
 		</Unit>

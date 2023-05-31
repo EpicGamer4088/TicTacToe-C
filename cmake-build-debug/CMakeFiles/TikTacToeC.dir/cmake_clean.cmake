@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TikTacToeC.dir/functions.c.obj"
+  "CMakeFiles/TikTacToeC.dir/functions.c.obj.d"
   "CMakeFiles/TikTacToeC.dir/main.c.obj"
   "CMakeFiles/TikTacToeC.dir/main.c.obj.d"
   "TikTacToeC.exe"
