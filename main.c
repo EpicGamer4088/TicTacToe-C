@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "functions.h"
 
 #define SIZE 3
@@ -42,6 +43,8 @@ int main() {
         // Change player
         currentPlayer = (currentPlayer == 1) ? 2 : 1;
     }
+
+    system("PAUSE");
 
     return 0;
 }
