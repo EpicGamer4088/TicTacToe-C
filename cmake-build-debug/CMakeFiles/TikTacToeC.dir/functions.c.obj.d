@@ -1,5 +1,5 @@
 CMakeFiles/TikTacToeC.dir/functions.c.obj: \
- C:\Programmieren\Projekte\.github\solo\TikTacToeC\functions.c \
+ C:\Programmieren\Projekte\.github\Gruppenarbeit\TikTacToeC\functions.c \
  C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -11,4 +11,4 @@ CMakeFiles/TikTacToeC.dir/functions.c.obj: \
  C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:\Programmieren\Projekte\.github\solo\TikTacToeC\functions.h
+ C:\Programmieren\Projekte\.github\Gruppenarbeit\TikTacToeC\functions.h

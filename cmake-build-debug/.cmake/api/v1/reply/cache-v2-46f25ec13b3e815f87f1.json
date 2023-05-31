@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug"
+			"value" : "c:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Programmieren/Projekte/.github/solo/TikTacToeC"
+			"value" : "C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug"
+			"value" : "C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug"
 		},
 		{
 			"name" : "TikTacToeC_IS_TOP_LEVEL",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Programmieren/Projekte/.github/solo/TikTacToeC"
+			"value" : "C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

@@ -10,15 +10,15 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ftkvfd
+Change Dir: C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9u3jdb
 
-Run Build Command(s):C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_5c1bb/fast && C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5c1bb.dir\build.make CMakeFiles/cmTC_5c1bb.dir/build
-mingw32-make[1]: Entering directory 'C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ftkvfd'
-Building C object CMakeFiles/cmTC_5c1bb.dir/CMakeCCompilerABI.c.obj
-C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj -c C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c
+Run Build Command(s):C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_9f161/fast && C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9f161.dir\build.make CMakeFiles/cmTC_9f161.dir/build
+mingw32-make[1]: Entering directory 'C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9u3jdb'
+Building C object CMakeFiles/cmTC_9f161.dir/CMakeCCompilerABI.c.obj
+C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj -c C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe
 Target: x86_64-w64-mingw32
@@ -26,8 +26,8 @@ Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 11.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5c1bb.dir\'
- C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\cmTC_5c1bb.dir\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\timpl\AppData\Local\Temp\ccXsOphi.s
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_9f161.dir\'
+ C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\cmTC_9f161.dir\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\timpl\AppData\Local\Temp\ccSHF4y8.s
 GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
 	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -48,17 +48,17 @@ GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
 	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 23424b72d090e8b977a96775bde79257
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5c1bb.dir\'
- as -v -o CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj C:\Users\timpl\AppData\Local\Temp\ccXsOphi.s
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_9f161.dir\'
+ as -v -o CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj C:\Users\timpl\AppData\Local\Temp\ccSHF4y8.s
 GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
 COMPILER_PATH=C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/
 LIBRARY_PATH=C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;/mingw/lib/../lib/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../;/mingw/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.'
-Linking C executable cmTC_5c1bb.exe
-C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_5c1bb.dir\link.txt --verbose=1
-C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\cmTC_5c1bb.dir/objects.a
-C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\ar.exe qc CMakeFiles\cmTC_5c1bb.dir/objects.a @CMakeFiles\cmTC_5c1bb.dir\objects1
-C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_5c1bb.dir/objects.a -Wl,--no-whole-archive -o cmTC_5c1bb.exe -Wl,--out-implib,libcmTC_5c1bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.'
+Linking C executable cmTC_9f161.exe
+C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_9f161.dir\link.txt --verbose=1
+C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\cmTC_9f161.dir/objects.a
+C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\ar.exe qc CMakeFiles\cmTC_9f161.dir/objects.a @CMakeFiles\cmTC_9f161.dir\objects1
+C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_9f161.dir/objects.a -Wl,--no-whole-archive -o cmTC_9f161.exe -Wl,--out-implib,libcmTC_9f161.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe
 COLLECT_LTO_WRAPPER=C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
@@ -69,10 +69,10 @@ Supported LTO compression algorithms: zlib
 gcc version 11.2.0 (GCC) 
 COMPILER_PATH=C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/
 LIBRARY_PATH=C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;/mingw/lib/../lib/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../;/mingw/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c1bb.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5c1bb.'
- C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_5c1bb.exe C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTC_5c1bb.dir/objects.a --no-whole-archive --out-implib libcmTC_5c1bb.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c1bb.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5c1bb.'
-mingw32-make[1]: Leaving directory 'C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ftkvfd'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9f161.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9f161.'
+ C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9f161.exe C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTC_9f161.dir/objects.a --no-whole-archive --out-implib libcmTC_9f161.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9f161.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9f161.'
+mingw32-make[1]: Leaving directory 'C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9u3jdb'
 
 
 
@@ -95,12 +95,12 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ftkvfd]
+  ignore line: [Change Dir: C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9u3jdb]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_5c1bb/fast && C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5c1bb.dir\build.make CMakeFiles/cmTC_5c1bb.dir/build]
-  ignore line: [mingw32-make[1]: Entering directory 'C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ftkvfd']
-  ignore line: [Building C object CMakeFiles/cmTC_5c1bb.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj -c C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_9f161/fast && C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9f161.dir\build.make CMakeFiles/cmTC_9f161.dir/build]
+  ignore line: [mingw32-make[1]: Entering directory 'C:/Programmieren/Projekte/.github/Gruppenarbeit/TikTacToeC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9u3jdb']
+  ignore line: [Building C object CMakeFiles/cmTC_9f161.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj -c C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe]
   ignore line: [Target: x86_64-w64-mingw32]
@@ -108,8 +108,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 11.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5c1bb.dir\']
-  ignore line: [ C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\cmTC_5c1bb.dir\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\timpl\AppData\Local\Temp\ccXsOphi.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_9f161.dir\']
+  ignore line: [ C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\cmTC_9f161.dir\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\timpl\AppData\Local\Temp\ccSHF4y8.s]
   ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
   ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -130,8 +130,8 @@ Parsed C implicit link information from above output:
   ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 23424b72d090e8b977a96775bde79257]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5c1bb.dir\']
-  ignore line: [ as -v -o CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj C:\Users\timpl\AppData\Local\Temp\ccXsOphi.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_9f161.dir\']
+  ignore line: [ as -v -o CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj C:\Users\timpl\AppData\Local\Temp\ccSHF4y8.s]
   ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
   ignore line: [COMPILER_PATH=C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
   ignore line: [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/]
@@ -143,12 +143,12 @@ Parsed C implicit link information from above output:
   ignore line: [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
   ignore line: [/mingw/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5c1bb.dir\CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_5c1bb.exe]
-  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_5c1bb.dir\link.txt --verbose=1]
-  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\cmTC_5c1bb.dir/objects.a]
-  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\ar.exe qc CMakeFiles\cmTC_5c1bb.dir/objects.a @CMakeFiles\cmTC_5c1bb.dir\objects1]
-  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe  -v -Wl --whole-archive CMakeFiles\cmTC_5c1bb.dir/objects.a -Wl --no-whole-archive -o cmTC_5c1bb.exe -Wl --out-implib libcmTC_5c1bb.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_9f161.dir\CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_9f161.exe]
+  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_9f161.dir\link.txt --verbose=1]
+  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\cmTC_9f161.dir/objects.a]
+  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\ar.exe qc CMakeFiles\cmTC_9f161.dir/objects.a @CMakeFiles\cmTC_9f161.dir\objects1]
+  ignore line: [C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe  -v -Wl --whole-archive CMakeFiles\cmTC_9f161.dir/objects.a -Wl --no-whole-archive -o cmTC_9f161.exe -Wl --out-implib libcmTC_9f161.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Programmieren\JetBrains\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
@@ -167,14 +167,14 @@ Parsed C implicit link information from above output:
   ignore line: [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
   ignore line: [/mingw/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c1bb.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5c1bb.']
-  link line: [ C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_5c1bb.exe C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTC_5c1bb.dir/objects.a --no-whole-archive --out-implib libcmTC_5c1bb.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9f161.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9f161.']
+  link line: [ C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9f161.exe C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTC_9f161.dir/objects.a --no-whole-archive --out-implib libcmTC_9f161.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
     arg [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe] ==> ignore
     arg [-m] ==> ignore
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_5c1bb.exe] ==> ignore
+    arg [cmTC_9f161.exe] ==> ignore
     arg [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
     arg [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o] ==> obj [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o]
     arg [-LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0] ==> dir [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0]
@@ -186,10 +186,10 @@ Parsed C implicit link information from above output:
     arg [-LC:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..] ==> dir [C:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..]
     arg [-L/mingw/lib] ==> dir [/mingw/lib]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_5c1bb.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_9f161.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_5c1bb.dll.a] ==> ignore
+    arg [libcmTC_9f161.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
