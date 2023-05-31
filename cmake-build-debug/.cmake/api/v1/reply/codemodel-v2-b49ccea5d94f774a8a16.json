@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "H:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug",
-		"source" : "H:/Programmieren/Projekte/.github/solo/TikTacToeC"
+		"build" : "C:/Programmieren/Projekte/.github/solo/TikTacToeC/cmake-build-debug",
+		"source" : "C:/Programmieren/Projekte/.github/solo/TikTacToeC"
 	},
 	"version" : 
 	{

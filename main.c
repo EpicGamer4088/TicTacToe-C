@@ -3,7 +3,9 @@
 #define SIZE 3
 
 void printBoard(char board[SIZE][SIZE]) {
+    printf("   1   2   3\n");
     for (int i = 0; i < SIZE; i++) {
+        printf("%d ", i + 1);
         for (int j = 0; j < SIZE; j++) {
             printf(" %c ", board[i][j]);
             if (j != SIZE - 1)
@@ -11,12 +13,7 @@ void printBoard(char board[SIZE][SIZE]) {
         }
         printf("\n");
         if (i != SIZE - 1) {
-            for (int j = 0; j < SIZE; j++) {
-                printf("---");
-                if (j != SIZE - 1)
-                    printf("+");
-            }
-            printf("\n");
+            printf("  ---+---+---\n");
         }
     }
 }
@@ -48,17 +45,21 @@ int main() {
 
     while (1) {
         printf("Spieler %d, bitte geben Sie die Koordinaten (Zeile Spalte) Ihres Zuges ein: ", currentPlayer);
-        int row, col;
-        scanf("%d %d", &row, &col);
+        int row;
+        int col;
+        scanf(" %d %d", &row, &col);
 
-        // Überprüfe die Gültigkeit des Zuges
-        if (row < 0 || row >= SIZE || col < 0 || col >= SIZE || board[row][col] != ' ') {
+        // Convert col to index
+        int colIndex = col - 1;
+
+        // Check the validity of the move
+        if (row < 1 || row > SIZE || colIndex < 0 || colIndex >= SIZE || board[row - 1][colIndex] != ' ') {
             printf("Ungültiger Zug! Bitte versuchen Sie es erneut.\n");
             continue;
         }
 
-        // Setze den Zug auf dem Spielfeld
-        board[row][col] = (currentPlayer == 1) ? 'X' : 'O';
+        // Place the move on the field
+        board[row - 1][colIndex] = (currentPlayer == 1) ? 'X' : 'O';
 
         // Update the game
         printBoard(board);
@@ -66,7 +67,7 @@ int main() {
 
         // Check the score
         if (checkWin(board, (currentPlayer == 1) ? 'X' : 'O')) {
-            printf("Spieler %d hat gewonnen!\n", currentPlayer);
+            printf("Spieler %d gewinnt!\n", currentPlayer);
             break;
         } else if (moves == SIZE * SIZE) {
             printf("Unentschieden!\n");
