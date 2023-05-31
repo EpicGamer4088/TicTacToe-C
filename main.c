@@ -12,15 +12,15 @@ int main() {
     while (1) {
         printf("Spieler %d, bitte geben Sie die Koordinaten (Zeile Spalte) Ihres Zuges ein: ", currentPlayer);
         int row;
-        int col;
-        scanf(" %d %d", &row, &col);
+        char col;
+        scanf(" %d %c", &row, &col);
 
         // Convert col to index
-        int colIndex = col - 1;
+        int colIndex = col - 'a';
 
         // Check the validity of the move
         if (row < 1 || row > SIZE || colIndex < 0 || colIndex >= SIZE || board[row - 1][colIndex] != ' ') {
-            printf("Ungültiger Zug! Bitte versuchen Sie es erneut.\n");
+            printf("Ungueltiger Zug! Bitte versuchen Sie es erneut.\n");
             continue;
         }
 

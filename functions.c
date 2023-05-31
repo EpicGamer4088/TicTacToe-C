@@ -4,9 +4,9 @@
 #define SIZE 3
 
 void printBoard(char board[SIZE][SIZE]) {
-    printf("   1   2   3\n");
+    printf("   a   b   c\n");
     for (int i = 0; i < SIZE; i++) {
-        printf("%d ", i + 1);
+        printf("%c ", '1' + i);
         for (int j = 0; j < SIZE; j++) {
             printf(" %c ", board[i][j]);
             if (j != SIZE - 1)
