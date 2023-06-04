@@ -23,11 +23,27 @@ CMakeFiles/TikTacToeC.dir/functions.c.obj: H:/Programmieren/Projekte/.github/mit
   H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
   H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
   H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/getopt.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
   H:/Programmieren/Projekte/.github/mit\ Elli/TikTacToeC/functions.h
 
 CMakeFiles/TikTacToeC.dir/main.c.obj: H:/Programmieren/Projekte/.github/mit\ Elli/TikTacToeC/main.c \
   H:/Programmieren/Projekte/.github/mit\ Elli/TikTacToeC/functions.h
 
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/string.h:
 
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/vadefs.h:
 
@@ -51,6 +67,10 @@ H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-ming
 
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h:
+
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl:
 
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
@@ -65,9 +85,17 @@ H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/lib/gcc/x86_64-
 
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h:
 
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/unistd.h:
+
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h:
 
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/getopt.h:
+
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/io.h:
 
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/malloc.h:
 
@@ -76,3 +104,17 @@ H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/lib/gcc/x86_64-
 H:/Programmieren/Projekte/.github/mit\ Elli/TikTacToeC/functions.h:
 
 H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/errno.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/process.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sys/types.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/time.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/_timeval.h:
+
+H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h:
