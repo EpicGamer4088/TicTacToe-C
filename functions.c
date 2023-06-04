@@ -13,7 +13,7 @@ void Main() {
     int moves = 0;
     int repInputKIorPlayer;
     int playerChoiceRes;
-    char *ki = "KI", *player = "Player";
+    const char *ki = "KI", *player = "Player";
     char *playerChoice = (char*)malloc(6 * sizeof(char));
     char *player1 = (char*) malloc(12 * sizeof(char));
     char *player2 = (char*) malloc(12 * sizeof(char));
