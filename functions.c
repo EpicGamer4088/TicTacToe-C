@@ -32,6 +32,7 @@ void Main() {
     }
 
     do {
+        repInputKIorPlayer = 0;
         playerChoiceRes = strcmp(playerChoice, player);
         if (playerChoiceRes == 0) {
             gameWithPlayer(board, currentPlayer, moves, player1, player2);
