@@ -9,7 +9,22 @@
 void Main();
 
 /**
- *
+ * Prints out a Titel Screen
+ */
+void printTitleScreen();
+
+/**
+ * Prints the menu options
+ * @param selectedOption ... The selected option for the Game
+ */
+void printMenuOptions(int selectedOption);
+
+/**
+ * Prints out a Loading Screen
+ */
+void printLoadingScreen();
+
+/**
  * @param board ... The Game Board
  * @param currentPlayer ... The current player
  * @param moves ... The amount of moves
@@ -19,7 +34,6 @@ void Main();
 void gameWithPlayer(char board[SIZE][SIZE], int currentPlayer, int moves, char* player1, char* player2);
 
 /**
- *
  * @param board ... The Game Board
  * @param currentPlayer ... The current player
  * @param moves ... The amount of moves
@@ -30,11 +44,12 @@ void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* play
 /**
  *
  * @param board ... The Game Board
+ * @param selectedRow ... The currently selected Row
+ * @param selectedCol ... The currently selected Col
  */
-void printBoard(char board[SIZE][SIZE]);
+void printBoard(char board[SIZE][SIZE], int selectedRow, int selectedCol);
 
 /**
- *
  * @param board ... The Game Board
  * @param player ... The Current player
  * @return

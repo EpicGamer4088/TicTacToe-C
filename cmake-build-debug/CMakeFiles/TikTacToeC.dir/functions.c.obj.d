@@ -35,4 +35,5 @@ CMakeFiles/TikTacToeC.dir/functions.c.obj: \
  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
  H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+ H:/Programmieren/JetBrains/apps/CLion/ch-0/231.9011.31/bin/mingw/include/conio.h \
  H:\Programmieren\Projekte\.github\mit\ Elli\TikTacToeC\functions.h

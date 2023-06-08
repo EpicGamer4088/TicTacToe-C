@@ -3,6 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <time.h>
+#include <conio.h>
+
 #include "functions.h"
 
 #define SIZE 3
@@ -11,150 +13,156 @@ void Main() {
     char board[SIZE][SIZE] = {{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
     int currentPlayer = 1;
     int moves = 0;
-    int repInputKIorPlayer;
-    int playerChoiceRes;
-    const char *ki = "KI", *player = "Player";
-    char *playerChoice = (char*)malloc(6 * sizeof(char));
-    char *player1 = (char*) malloc(12 * sizeof(char));
-    char *player2 = (char*) malloc(12 * sizeof(char));
+    int selectedOption = 1;
+    int option;
+    char *player1 = (char*)malloc(12 * sizeof(char));
+    char *player2 = (char*)malloc(12 * sizeof(char));
 
-    printf("Schreibe 'KI' um gegen eine KI zu spielen oder 'Player' um gegen einen anderen Spieler zu spielen:");
-    scanf("%s", playerChoice);
+    while (1) {
+        system("cls");
+        printTitleScreen();
+        printMenuOptions(selectedOption);
 
-    if (strcmp(playerChoice, player) == 0) {
-        printf("Gib den Namen des ersten Spielers ein (maximal 12 zeichen): ");
-        scanf("%s", player1);
-        printf("Gib den Namen des zweiten Spielers ein (maximal 12 zeichen): ");
-        scanf("%s", player2);
-    } else if (strcmp(playerChoice, ki) == 0) {
-        printf("Gib deinen Namen ein (maximal 12 zeichen): ");
-        scanf("%s", player1);
+        // Input with arrow keys
+        option = getch();
+        if (option == 224) {  // Arrow key detected
+            option = getch();
+            if (option == 72) {
+                selectedOption = (selectedOption == 1) ? 3 : selectedOption - 1;
+            } else if (option == 80) {
+                selectedOption = (selectedOption == 3) ? 1 : selectedOption + 1;
+            }
+        } else if (option == 13) {
+            break;
+        }
     }
 
-    do {
-        repInputKIorPlayer = 0;
-        playerChoiceRes = strcmp(playerChoice, player);
-        if (playerChoiceRes == 0) {
+    switch (selectedOption) {
+        case 1:
+            system("cls");
+            printLoadingScreen();
+            printf("Gib den Namen des ersten Spielers ein (maximal 12 Zeichen): ");
+            scanf("%s", player1);
+            printf("Gib den Namen des zweiten Spielers ein (maximal 12 Zeichen): ");
+            scanf("%s", player2);
             gameWithPlayer(board, currentPlayer, moves, player1, player2);
-        } else {
-            playerChoiceRes = strcmp(playerChoice, ki);
-            if (playerChoiceRes == 0) {
-                gameWithKi(board, currentPlayer, moves, player1);
-            } else {
-                printf("Du hast weder 'KI' noch 'Player' eingegeben.\nWiederhole deine Eingabe:\n");
-                repInputKIorPlayer = 1;
-            }
-        }
-    } while (repInputKIorPlayer == 1);
+            break;
+        case 2:
+            system("cls");
+            printLoadingScreen();
+            printf("Gib deinen Namen ein (maximal 12 Zeichen): ");
+            scanf("%s", player1);
+            gameWithKi(board, currentPlayer, moves, player1);
+            break;
+        case 3:
+            printf("\nDas Programm wird beendet. Auf Wiedersehen!\n");
+            exit(0);
+        default:
+            printf("\nUngültige Option. Bitte eine gültige Option wählen.\n\n");
+            break;
+    }
+}
+
+
+void printTitleScreen() {
+    printf("***********************************\n");
+    printf("*                                 *\n");
+    printf("*           Tic Tac Toe           *\n");
+    printf("*                                 *\n");
+    printf("***********************************\n\n");
+}
+
+void printMenuOptions(int selectedOption) {
+    printf("Waehle eine Option:\n");
+    printf("%s  Gegen einen Spieler spielen\n", (selectedOption == 1) ? ">>" : "  ");
+    printf("%s  Gegen die KI spielen\n", (selectedOption == 2) ? ">>" : "  ");
+    printf("%s  Beenden\n\n", (selectedOption == 3) ? ">>" : "  ");
+}
+
+void printLoadingScreen() {
+    printf("Lade Spiel\n\n[");
+    fflush(stdout);
+    usleep(500000);
+
+    int i;
+    for (i = 0; i < 20; i++) {
+        printf("=");
+        fflush(stdout);
+        usleep(500000);
+    }
+
+    printf("]");
+    fflush(stdout);
+    usleep(500000);
+
+    system("cls");
 }
 
 void gameWithPlayer(char board[SIZE][SIZE], int currentPlayer, int moves, char* player1, char* player2) {
+    int selectedRow = 0;
+    int selectedCol = 0;
+
     while (1) {
-        char* currentPlayerName = (currentPlayer == 1) ? player1 : player2;
-        printf("%s, bitte geben Sie die Koordinaten (Zeile Spalte) Ihres Zuges ein: ", currentPlayerName);
-        int row;
-        char col;
-        scanf(" %d %c", &row, &col);
+        system("cls");
+        char *currentPlayerName = (currentPlayer == 1) ? player1 : player2;
+        printf("%s, bitte waehlen Sie die Koordinaten Ihres Zuges mit den Pfeiltasten und bestaetigen Sie mit ENTER:\n\n",
+               currentPlayerName);
 
-        // Convert col to index
-        int colIndex = col - 'a';
+        // Print the board with selected cell indicator
+        printBoard(board, selectedRow, selectedCol);
 
-        // Check the validity of the move
-        if (row < 1 || row > SIZE || colIndex < 0 || colIndex >= SIZE || board[row - 1][colIndex] != ' ') {
-            printf("Ungueltiger Zug! Bitte versuchen Sie es erneut.\n");
-            continue;
-        }
+        int keyPressed = getch();
 
-        // Place the move on the field
-        board[row - 1][colIndex] = (currentPlayer == 1) ? 'X' : 'O';
+        if (keyPressed == 0 || keyPressed == 224) {
+            keyPressed = getch(); // Ignore arrow key prefix
 
-        // Update the game
-        printBoard(board);
-        moves++;
-
-        // Check the score
-        if (checkWin(board, (currentPlayer == 1) ? 'X' : 'O')) {
-            printf("%s hat gewonnen!\n\n", currentPlayerName);
-            system("PAUSE");
-            exit(0);
-        } else if (moves == SIZE * SIZE) {
-            printf("Unentschieden!\n\n");
-            system("PAUSE");
-            exit(0);
-        }
-
-        // Change player
-        currentPlayer = (currentPlayer == 1) ? 2 : 1;
-    }
-}
-
-void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* player1) {
-    char* player2 = "KI";
-    while (1) {
-        char* currentPlayerName = (currentPlayer == 1) ? player1 : player2;
-        printf("%s, bitte geben Sie die Koordinaten (Zeile Spalte) Ihres Zuges ein: ", currentPlayerName);
-        int row;
-        char col;
-        scanf(" %d %c", &row, &col);
-
-        // Convert col to index
-        int colIndex = col - 'a';
-
-        // Check the validity of the move
-        if (row < 1 || row > SIZE || colIndex < 0 || colIndex >= SIZE || board[row - 1][colIndex] != ' ') {
-            printf("Ungueltiger Zug! Bitte versuchen Sie es erneut.\n");
-            continue;
-        }
-
-        // Place the move on the field
-        board[row - 1][colIndex] = (currentPlayer == 1) ? 'X' : 'O';
-
-        // Update the game
-        printBoard(board);
-        moves++;
-
-        // Check the score
-        if (checkWin(board, (currentPlayer == 1) ? 'X' : 'O')) {
-            printf("%s hat gewonnen!\n\n", currentPlayerName);
-            system("PAUSE");
-            exit(0);
-        } else if (moves == SIZE * SIZE) {
-            printf("Unentschieden!\n\n");
-            system("PAUSE");
-            exit(0);
-        }
-
-        // Change player
-        currentPlayer = (currentPlayer == 1) ? 2 : 1;
-
-        // KI-Zug
-        if (strcmp(player2, "KI") == 0) {
-            printf("KI ist am Zug");
-            for (int i = 0; i < 3; i++) {
-                sleep(1);
-                printf(".");
+            // Move selection up
+            if (keyPressed == 72 && selectedRow > 0) {
+                selectedRow--;
             }
-            sleep(1);
-            printf("\n");
-            srand(time(NULL));
-            do {
-                row = rand() % SIZE + 1;
-                colIndex = rand() % SIZE;
-            } while (board[row - 1][colIndex] != ' ');
+                // Auswahl nach unten verschieben
+            else if (keyPressed == 80 && selectedRow < SIZE - 1) {
+                selectedRow++;
+            }
+                // Auswahl nach links verschieben
+            else if (keyPressed == 75 && selectedCol > 0) {
+                selectedCol--;
+            }
+                // Move selection to the right
+            else if (keyPressed == 77 && selectedCol < SIZE - 1) {
+                selectedCol++;
+            }
+        } else if (keyPressed == 13) {
+            // Check the validity of the move
+            if (board[selectedRow][selectedCol] != ' ') {
+                continue;
+            }
 
-            board[row - 1][colIndex] = (currentPlayer == 1) ? 'X' : 'O';
+            // Place the move on the field
+            board[selectedRow][selectedCol] = (currentPlayer == 1) ? 'X' : 'O';
 
             // Update the game
-            printBoard(board);
+            system("cls");
+            printBoard(board, selectedRow, selectedCol);
             moves++;
 
-            // Check the score after KI's move
+            // Check the score
             if (checkWin(board, (currentPlayer == 1) ? 'X' : 'O')) {
-                printf("Die KI gewinnt!\n\n");
+                system("cls");
+                selectedRow = -1, selectedCol = -1;
+                printBoard(board, selectedRow, selectedCol);
+                usleep(500000);
+                printf("%s hat gewonnen!\n\n", currentPlayerName);
+                usleep(500000);
                 system("PAUSE");
                 exit(0);
             } else if (moves == SIZE * SIZE) {
+                system("cls");
+                selectedRow = -1, selectedCol = -1;
+                printBoard(board, selectedRow, selectedCol);
+                usleep(500000);
                 printf("Unentschieden!\n\n");
+                usleep(500000);
                 system("PAUSE");
                 exit(0);
             }
@@ -162,23 +170,150 @@ void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* play
             // Change player
             currentPlayer = (currentPlayer == 1) ? 2 : 1;
         }
+
+        // Print the updated board with selected cell indicator
+        printBoard(board, selectedRow, selectedCol);
     }
 }
 
-void printBoard(char board[SIZE][SIZE]) {
-    printf("   a   b   c\n");
+void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* player1) {
+    char* player2 = "KI";
+    int selectedRow = 0;
+    int selectedCol = 0;
+
+    while (1) {
+        system("cls");
+        char* currentPlayerName = (currentPlayer == 1) ? player1 : player2;
+        printf("%s, bitte waehlen Sie die Koordinaten Ihres Zuges mit den Pfeiltasten und bestaetigen Sie mit ENTER:\n\n", currentPlayerName);
+
+        printBoard(board, selectedRow, selectedCol);
+
+        int keyPressed = getch();
+
+        if (keyPressed == 0 || keyPressed == 224) {
+            keyPressed = getch(); // Ignore arrow key prefix
+
+            // Move selection up
+            if (keyPressed == 72 && selectedRow > 0) {
+                selectedRow--;
+            }
+                // Move selection down
+            else if (keyPressed == 80 && selectedRow < SIZE - 1) {
+                selectedRow++;
+            }
+                // Move selection left
+            else if (keyPressed == 75 && selectedCol > 0) {
+                selectedCol--;
+            }
+                // Move selection to the right
+            else if (keyPressed == 77 && selectedCol < SIZE - 1) {
+                selectedCol++;
+            }
+        }
+        else if (keyPressed == 13) {
+            // Check the validity of the move
+            if (board[selectedRow][selectedCol] != ' ') {
+                continue;
+            }
+
+            // Place the move on the field
+            board[selectedRow][selectedCol] = (currentPlayer == 1) ? 'X' : 'O';
+
+            // Update the game
+            system("cls");
+            printBoard(board, selectedRow, selectedCol);
+            moves++;
+
+            // Check the score
+            if (checkWin(board, (currentPlayer == 1) ? 'X' : 'O')) {
+                system("cls");
+                printBoard(board, -1, -1);
+                usleep(500000);
+                printf("%s hat gewonnen!\n\n", currentPlayerName);
+                usleep(500000);
+                system("PAUSE");
+                exit(0);
+            }
+            else if (moves == SIZE * SIZE) {
+                system("cls");
+                printBoard(board, -1, -1);
+                usleep(500000);
+                printf("Unentschieden!\n\n");
+                usleep(500000);
+                system("PAUSE");
+                exit(0);
+            }
+
+            // Change player
+            currentPlayer = (currentPlayer == 1) ? 2 : 1;
+
+            // AI-Moves
+            if (strcmp(player2, "KI") == 0) {
+                printf("KI ist am Zug");
+                for (int i = 0; i < 3; i++) {
+                    sleep(1);
+                    printf(".");
+                }
+                sleep(1);
+                printf("\n");
+                srand(time(NULL));
+                do {
+                    selectedRow = rand() % SIZE;
+                    selectedCol = rand() % SIZE;
+                } while (board[selectedRow][selectedCol] != ' ');
+
+                board[selectedRow][selectedCol] = (currentPlayer == 1) ? 'X' : 'O';
+
+                // Update the game
+                system("cls");
+                printBoard(board, selectedRow, selectedCol);
+                moves++;
+
+                // Check the score after KI's move
+                if (checkWin(board, (currentPlayer == 1) ? 'X' : 'O')) {
+                    system("cls");
+                    printBoard(board, -1, -1);
+                    usleep(500000);
+                    printf("Die KI gewinnt!\n\n");
+                    usleep(500000);
+                    system("PAUSE");
+                    exit(0);
+                }
+                else if (moves == SIZE * SIZE) {
+                    system("cls");
+                    printBoard(board, -1, -1);
+                    usleep(500000);
+                    printf("Unentschieden!\n\n");
+                    usleep(500000);
+                    system("PAUSE");
+                    exit(0);
+                }
+
+                // Change player
+                currentPlayer = (currentPlayer == 1) ? 2 : 1;
+            }
+        }
+    }
+}
+
+void printBoard(char board[SIZE][SIZE], int selectedRow, int selectedCol) {
+    printf("    a   b   c\n");
     for (int i = 0; i < SIZE; i++) {
         printf("%c ", '1' + i);
         for (int j = 0; j < SIZE; j++) {
-            printf(" %c ", board[i][j]);
-            if (j != SIZE - 1)
-                printf("|");
+            if (i == selectedRow && j == selectedCol) {
+                printf("| %c ", '#');
+            }
+            else {
+                printf("| %c ", board[i][j]);
+            }
         }
-        printf("\n");
+        printf("|\n");
         if (i != SIZE - 1) {
-            printf("  ---+---+---\n");
+            printf("   ---+---+---\n");
         }
     }
+    printf("\n");
 }
 
 int checkWin(char board[SIZE][SIZE], char player) {
