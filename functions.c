@@ -55,7 +55,10 @@ void Main() {
             gameWithKi(board, currentPlayer, moves, player1);
             break;
         case 3:
-            printf("\nDas Programm wird beendet. Auf Wiedersehen!\n");
+            system("cls");
+            printf("Das Programm wird beendet. Auf Wiedersehen!\n\n");
+            usleep(1000000);
+            system("PAUSE");
             exit(0);
         default:
             printf("\nUngültige Option. Bitte eine gültige Option wählen.\n\n");

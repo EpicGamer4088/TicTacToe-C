@@ -41,6 +41,19 @@ void gameWithPlayer(char board[SIZE][SIZE], int currentPlayer, int moves, char* 
  */
 void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* player1);
 
+
+
+int generateRandomMove(char board[SIZE][SIZE], int* selectedRow, int* selectedCol);
+int generateWinningMove(char board[SIZE][SIZE], int currentPlayer, int* selectedRow, int* selectedCol);
+int generateBlockingMove(char board[SIZE][SIZE], int currentPlayer, int* selectedRow, int* selectedCol);
+int generateStrategicMove(char board[SIZE][SIZE], int currentPlayer, int* selectedRow, int* selectedCol);
+
+
+
+
+
+
+
 /**
  *
  * @param board ... The Game Board
