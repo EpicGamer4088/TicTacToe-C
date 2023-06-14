@@ -157,8 +157,7 @@ void gameWithPlayer(char board[SIZE][SIZE], int currentPlayer, int moves, char* 
                 usleep(500000);
                 printf("%s hat gewonnen!\n\n", currentPlayerName);
                 usleep(500000);
-                system("PAUSE");
-                exit(0);
+                Main();
             } else if (moves == SIZE * SIZE) {
                 system("cls");
                 selectedRow = -1, selectedCol = -1;
@@ -166,8 +165,7 @@ void gameWithPlayer(char board[SIZE][SIZE], int currentPlayer, int moves, char* 
                 usleep(500000);
                 printf("Unentschieden!\n\n");
                 usleep(500000);
-                system("PAUSE");
-                exit(0);
+                Main();
             }
 
             // Change player
@@ -234,8 +232,7 @@ void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* play
                 usleep(500000);
                 printf("%s hat gewonnen!\n\n", currentPlayerName);
                 usleep(500000);
-                system("PAUSE");
-                exit(0);
+                Main();
             }
             else if (moves == SIZE * SIZE) {
                 system("cls");
@@ -243,8 +240,7 @@ void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* play
                 usleep(500000);
                 printf("Unentschieden!\n\n");
                 usleep(500000);
-                system("PAUSE");
-                exit(0);
+                Main();
             }
 
             // Change player
@@ -279,8 +275,7 @@ void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* play
                     usleep(500000);
                     printf("Die KI gewinnt!\n\n");
                     usleep(500000);
-                    system("PAUSE");
-                    exit(0);
+                    Main();
                 }
                 else if (moves == SIZE * SIZE) {
                     system("cls");
@@ -288,8 +283,7 @@ void gameWithKi(char board[SIZE][SIZE], int currentPlayer, int moves, char* play
                     usleep(500000);
                     printf("Unentschieden!\n\n");
                     usleep(500000);
-                    system("PAUSE");
-                    exit(0);
+                    Main();
                 }
 
                 // Change player
